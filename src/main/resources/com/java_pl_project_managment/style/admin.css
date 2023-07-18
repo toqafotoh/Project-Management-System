@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('fonts/RobotoCondensed-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto Condensed Light Italic';
+    src: url('fonts/RobotoCondensed-LightItalic.ttf');
+}
+
+*{
+    -fx-font-family: 'Roboto Condensed';
+}
+
+#viewBtn{
+    -fx-padding : 10px;
+}
+#userBtn{
+    -fx-padding : 10px;
+}
+
+#viewBtn:hover{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill : black;
+    -fx-font-size: 22px;
+    -fx-padding : 10px;
+}
+#userBtn:hover{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill : black;
+    -fx-font-size: 22px;
+     -fx-padding : 10px;
+
+}
+
+#pushBtn{
+    -fx-background-color : #e0a800;
+    -fx-text-fill:#FFFFFF;
+    -fx-font-weight : bold;
+    -fx-font-size:14;
+    -fx-cursor : hand;
+    
+}
+#pushBtn:hover{
+    -fx-background-color : #FFFFFF;
+    -fx-text-fill:#e0a800;
+    -fx-font-weight : bold;
+    -fx-font-size:14;
+    -fx-cursor : hand;
+}
+#goToResult{
+        -fx-background-color : yellow;
+        -fx-text-fill:black;
+        -fx-font-weight : bold;
+        -fx-font-size:14;
+        -fx-cursor : hand;
+}
+#goToResult:hover{
+        -fx-background-color :  black;
+        -fx-text-fill:yellow;
+        -fx-font-weight : bold;
+        -fx-font-size:14;
+        -fx-cursor : hand;
+}

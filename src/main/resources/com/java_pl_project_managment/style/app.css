@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('fonts/RobotoCondensed-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto Condensed Light Italic';
+    src: url('fonts/RobotoCondensed-LightItalic.ttf');
+}
+
+*{
+    -fx-font-family: 'Roboto Condensed';
+
+}
+
+#l1{
+    -fx-alignment : "center";
+    -fx-font-size : 32px;
+}
+#stage{
+    -fx-background-color : "white";
+
+}
+#log{
+    -fx-background-radius : 15px;
+    -fx-background-color : #0e0038;
+    -fx-font-size : 16px;
+
+}
+#email{
+    -fx-font-family: 'Roboto Condensed Light Italic';
+    -fx-border-color : #0e0038;
+    -fx-padding : 0px 10px;
+    -fx-font-size : 15px;
+
+
+}
+#password{
+    -fx-font-family: 'Roboto Condensed Light Italic';
+    -fx-border-color : #0e0038;
+    -fx-padding : 0px 10px;
+    -fx-font-size : 15px;
+
+}
+
+/* #log_dialog{
+    -fx-z-index: 1;
+    -fx-text-align: center;
+    -fx-border: red;
+} */
