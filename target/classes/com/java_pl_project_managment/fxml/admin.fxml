@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../style/admin.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java_pl_project_managment.adminController">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="193.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="118.0" fitWidth="118.0" layoutX="38.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/ad_view/PL%20project%20class%20diagram%20-%20Page%201%20(1).png" />
+               </image></ImageView>
+            <Label fx:id="viewBtn" layoutY="305.0" onMouseClicked="#viewP" prefHeight="48.0" prefWidth="226.0" style="-fx-cursor: hand;" text="View Projects" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Condensed" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="userBtn" layoutY="360.0" onMouseClicked="#addU" prefHeight="48.0" prefWidth="226.0" style="-fx-cursor: hand;" text="Modify Users" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Condensed" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="156.0" fitWidth="208.0" layoutX="9.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/HDS_itprojectCon_Page.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-3.0" prefHeight="71.0" prefWidth="1288.0" style="-fx-background-color: black;">
+         <children>
+            <Label fx:id="welcome_ad" layoutX="25.0" layoutY="29.0" prefHeight="24.0" prefWidth="193.0" text="Welcome, Admin" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Condensed Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label layoutX="241.0" layoutY="71.0" prefHeight="59.0" prefWidth="176.0" text="All Projects">
+         <font>
+            <Font name="Roboto Condensed" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="836.0" layoutY="125.0" prefHeight="28.0" prefWidth="78.0" text="Search">
+        <font>
+          <Font size="22.0" />
+        </font>
+    </Label>
+    <TextField fx:id="searchBar" layoutX="917.0" layoutY="126.0" prefHeight="28.0" prefWidth="271.0" promptText="search project name" style="-fx-border-color: black;">
+        <font>
+          <Font size="13.0" />
+        </font>
+    </TextField>
+    <Button fx:id="goToResult" layoutX="1205.0" layoutY="126.0" mnemonicParsing="false" onAction="#search" prefHeight="14.0" prefWidth="54.0" text="GO" textFill="#021b33">
+        <font>
+          <Font name="Arial Rounded MT Bold" size="15.0" />
+        </font>
+    </Button>
+      <AnchorPane layoutX="241.0" layoutY="167.0" prefHeight="231.0" prefWidth="1014.0">
+         <children>
+            <TableView fx:id="pro_table" prefHeight="516.0" prefWidth="1018.0">
+               <columns>
+                  <TableColumn fx:id="Pro_name" prefWidth="130.0" styleClass="Col" text="Project Name" />
+                  <TableColumn fx:id="Pro_desc" prefWidth="275.99993896484375" styleClass="Col" text="Project Description" />
+                  <TableColumn fx:id="Deadline" minWidth="7.20001220703125" prefWidth="148.0" styleClass="Col" text="Deadline" />
+                  <TableColumn fx:id="Status" minWidth="0.0" prefWidth="125.60003662109375" text="Status" />
+                  <TableColumn fx:id="Pm" prefWidth="163.99993896484375" styleClass="Col" text="PM" />
+                  <TableColumn fx:id="Tl" prefWidth="175.2000732421875" styleClass="Col" text="TL" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="1173.0" layoutY="85.0" mnemonicParsing="false" onAction="#logOut" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #4d515c; -fx-text-fill: white; -fx-cursor: hand;" text="LOG OUT" textFill="#1e1a1a">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
